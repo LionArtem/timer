@@ -1,0 +1,74 @@
+.body {
+  max-width: 1280px;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1680265343639-69df83d45d45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteiner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 20vh auto 0px;
+}
+
+@keyframes opacityList {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.error {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 35px;
+  color: coral;
+  padding: 0;
+  animation: opacityList 0.5s linear;
+}
+
+.addError {
+  display: block;
+}
+
+.input {
+  all: unset;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid forestgreen;
+  background-color: rgb(214, 220, 225);
+  color: #413d3d;
+  font-weight: 900;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  margin: 0px auto 10px;
+  background-color: rgb(184, 230, 110);
+  font-size: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.buttonDisable {
+  background-color: #a69e9e;
+}
+
+.span {
+  color: aqua;
+  font-size: 40px;
+  font-weight: 600;
+}
